@@ -49,9 +49,9 @@ public class PermutationTraverser {
 		
 		if(permSize == size)
 		{
-			
+			String perm = Arrays.toString(permutation);		
 			int ops = a.getOperations(permutation);
-			//System.out.println(Arrays.toString(permutation) + ": " + ops);
+			System.out.println(perm + ": " + ops);
 			
 			if(frequencies.get(ops) == null)
 			{

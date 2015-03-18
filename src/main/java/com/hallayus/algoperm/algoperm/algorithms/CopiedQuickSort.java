@@ -41,13 +41,14 @@ public class CopiedQuickSort implements Algorithm {
 			while (i <= j) {
 			  // If the current value from the left list is smaller then the pivot
 			  // element then get the next element from the left list
-			  count++;
-			  while (numbers[i] < pivot) {
+			count++;  
+			while (numbers[i] < pivot) {
 			    i++;
 			    count++;
 			  }
 			  // If the current value from the right list is larger then the pivot
 			  // element then get the next element from the right list
+			count++;  
 			  while (numbers[j] > pivot) {
 			    j--;
 			    count++;

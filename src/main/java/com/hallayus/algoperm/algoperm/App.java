@@ -31,7 +31,7 @@ public class App implements Runnable
 	
     public static void main( String[] args )
     {
-        PermutationTraverser t = new PermutationTraverser(10);
+        PermutationTraverser t = new PermutationTraverser(5);
         HashMap<Integer,Integer> isortdata = t.getOperationCount(new InsertionSort());
         HashMap<Integer,Integer> qsortdata = t.getOperationCount(new CopiedQuickSort());
 
