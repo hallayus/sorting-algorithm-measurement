@@ -1,12 +1,10 @@
 package com.hallayus.algoperm.algoperm.algorithms;
 
-import java.util.Arrays;
-
 import com.hallayus.algoperm.algoperm.Algorithm;
 
 public class InsertionSort implements Algorithm{
 	
-	public <T extends Comparable> int getOperations(Integer[] l) {
+	public int getOperations(Integer[] l) {
 		int count = 0;
 		
 		for(int i = 1; i < l.length; i++)
@@ -23,7 +21,7 @@ public class InsertionSort implements Algorithm{
 			l[j] = obj;
 			count++;
 		}
-		System.out.println(Arrays.toString(l));
+		//System.out.println(Arrays.toString(l));
 		//count operations
 		return count;
 	}

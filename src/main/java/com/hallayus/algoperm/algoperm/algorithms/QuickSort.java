@@ -4,8 +4,11 @@ import com.hallayus.algoperm.algoperm.Algorithm;
 
 public class QuickSort implements Algorithm {
 
-	public <T extends Comparable> int getOperations(Integer[] permutation) {
-		// TODO Auto-generated method stub
+	public int getOperations(Integer[] permutation) {
+		//find median
+		
+		//partition around median
+		//sort either side
 		return 0;
 	}
 
@@ -13,4 +16,5 @@ public class QuickSort implements Algorithm {
 		return "Quick Sort";
 	}
 
+	  
 }

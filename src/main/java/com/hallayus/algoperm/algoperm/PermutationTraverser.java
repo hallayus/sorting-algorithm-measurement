@@ -1,6 +1,5 @@
 package com.hallayus.algoperm.algoperm;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 
@@ -14,11 +13,12 @@ public class PermutationTraverser {
 	public PermutationTraverser(int s)
 	{
 		this.size = s;
-		frequencies = new HashMap<Integer,Integer>();
 		permutation = new Integer[s];
 	}
 	
 	public HashMap<Integer,Integer> getOperationCount(Algorithm a){
+		frequencies = new HashMap<Integer,Integer>();
+		
 		Integer[] l = new Integer[size];
 		
 		for(int i = 0; i < size; i++)
@@ -28,7 +28,7 @@ public class PermutationTraverser {
 		
 		permute(l,1,a);
 		
-		System.out.println("test");
+		//System.out.println("test");
 		
 		return frequencies;
 	}
@@ -51,7 +51,7 @@ public class PermutationTraverser {
 		{
 			
 			int ops = a.getOperations(permutation);
-			System.out.println(Arrays.toString(permutation) + ": " + ops);
+			//System.out.println(Arrays.toString(permutation) + ": " + ops);
 			
 			if(frequencies.get(ops) == null)
 			{
